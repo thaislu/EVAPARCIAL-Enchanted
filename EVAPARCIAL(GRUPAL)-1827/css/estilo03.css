@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#eb639a;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    font-family: "Playfair Display";
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0px 10px;
+    
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #ffffff91;
+    text-decoration: none;
+}
+
+
+.logo{
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.iconos a:hover {
+   
+    color: #ffffff91;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    color: #333;
+    background-color: rgb(255, 240, 249);
+}
+
+.video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Asegura que el video no sobresalga */
+        margin-top: -50px;
+        z-index: -2;
+}
+    
+.video-container video {
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Altura completa */
+        object-fit: cover; /* Cubre todo el contenedor manteniendo la relación de aspecto */
+}
+
+.principal {
+    background-size: auto;
+    background-position: center;
+    height: 60vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.texto-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: -50;
+    align-items: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px;
+    
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    text-shadow: 10px 10px 10px #000000d4;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contenidouno h2{
+    margin-bottom: 15px;
+    font-family: "Arima";
+    color: #ffffff;
+    font-size: 20px
+
+}
+
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+
+  .productos {
+    background-color: #ffffff;
+    padding: 50px 0;
+    border-radius: 5px;
+   
+    }
+
+    h2{
+        color: #870f57;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 50px;
+        font-family: arima;
+        font-size: 25px;
+    }
+  .contenidotres {
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 20px;
+  }
+
+  .contenidotres .columna {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.373);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px;
+    
+    h3{
+        color: #46092e;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+        font-family: arima;
+        font-size: 20px;
+    }
+   } 
+    
+.columna:hover{
+    transform: translateY(-10px); /* Efecto de elevación */
+}
+
+  .contenidotres .columna img {
+        width: 100%; 
+        max-width: 300px;  
+        height: auto;
+        object-fit: cover; 
+        border-radius: 8px;
+  }
+
+
+  .contenidotres .columna p {
+    margin-top: 10px;
+    font-family: "Playfair Display" ;
+    font-weight: lighter;
+    font-size: 15px;
+    color:#222222;
+    line-height: 20px;
+    }
+
+    .contenidotres:hover {
+        transform: translateY(-10px); /* Efecto de elevación */
+    }
+
+    @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+ 
+  
+  h3 {
+    color: #46092e;
+    margin-bottom: 0px;
+    font-family: Arima;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  footer {
+    background-color: #eb639a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    color: #46092e; 
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px; 
+}
+
+.social-media a i {
+    color: #fff;
+}
+
+.social-media a:hover i {
+    color: #46092e; 
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p{
+    font-family: Arima;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.product-card img {
+    max-width: 100%;  
+    height: auto;     
+    border-radius: 8px; 
+}
+
+
+.product-card img {
+    width: 100%; 
+    max-width: 300px;  
+    height: auto;
+    object-fit: cover; 
+}

@@ -1,0 +1,305 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eb639a;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    font-family: "Playfair Display";
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0px 10px;
+    
+}
+
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #ffffff91;
+    text-decoration: none;
+}
+
+
+.logo{
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.iconos a:hover {
+   
+    color: #ffffff91;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.principal {
+    background-image: url('../Imagenes/fondo.jpg');
+    background-size: auto;
+    background-position: center;
+    height: 60vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px;
+    
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    text-shadow: 10px 10px 10px #000000d4;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contenidouno h2{
+    margin-bottom: 15px;
+    font-family: "Arima";
+    color: #ffffff;
+    font-size: 20px
+
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+    
+}
+
+.button {
+    background-color: #8f055a;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 30px;
+    box-shadow: 5px 5px 8px #000000; 
+    font-family: "Playfair Display";
+    transition: background-color 0.3s ease-in-out;
+
+    
+}
+
+.button:hover {
+    background-color: #46092e;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 30px;
+    
+}
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+  .productos {
+    background-color: #ffffff;
+    padding: 50px 0;
+    border-radius: 5px;
+   
+    }
+
+    h2{
+        color: #46092e;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+        font-family: arima;
+    }
+  .contenidotres {
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+   
+  }
+
+  .contenidotres .columna {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    
+    h3{
+        color: #cb1a84;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+        font-family: arima;
+        font-size: 20px;
+    }
+   } 
+    
+.columna:hover{
+    transform: translateY(-10px); /* Efecto de elevación */
+}
+
+  .contenidotres .columna img {
+        width: 100%; 
+        max-width: 300px;  
+        height: auto;
+        object-fit: cover; 
+        border-radius: 8px;
+  }
+
+
+  .contenidotres .columna p {
+    margin-top: 10px;
+    font-family: "Playfair Display" ;
+    font-weight: lighter;
+    font-size: 15px;
+    color:#000000;
+    line-height: 20px;
+    }
+
+    .contenidotres:hover {
+        transform: translateY(-10px); /* Efecto de elevación */
+    }
+
+    @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-color: #eb639a;
+    color: #ffffff;
+    padding: 5px;
+    display:flow-root;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-family: arial narrow;
+  }
+  
+  .filas{
+    display: flow-root;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3 {
+    color: #46092e;
+    margin-bottom: 0px;
+    font-family: Arima;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .social-icons1 {
+    display: flow-root;
+    align-items: center;
+  }
+  
+  p {
+    color: #46092e;
+    text-align: center;
+    font-weight: regular;
+    margin-top: 20px;
+    font-family: playfari display;
+    font-size: 15px;
+    }
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons{
+    list-style: none;
+    padding: 0;
+    display: flow-root;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffff91; /* Cambia esto según el color que desees para el hover */
+}
